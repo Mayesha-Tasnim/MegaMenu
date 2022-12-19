@@ -11,6 +11,9 @@ li {
 a {
   text-decoration: none;
 }
+body {
+  position: relative;
+}
 /*********************************/
 /**responsive css end**/
 /***responsive nav start****/
