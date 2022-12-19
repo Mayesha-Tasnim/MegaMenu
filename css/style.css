@@ -47,11 +47,9 @@ a {
 }
 /***responsive nav end****/
 /* responsive side menu start */
-body {
-  position: relative;
-}
 .res-side-bar {
-  background-color: white;
+  background-color: #edeeee;
+  height: 100%;
   width: 80%;
   position: absolute;
   top: 0;
@@ -116,7 +114,8 @@ body {
 .all-items {
   height: 100%;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .res-sub-menu,
 .res-sub-menu1,
@@ -124,13 +123,14 @@ body {
 .res-sub-menu3,
 .res-sub-menu4 {
   padding: 20px;
-  background-color: white;
+  background-color: #edeeee;
   width: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
   right: -100%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   z-index: 9999999999;
   transition: 1s ease-in-out;
 }
@@ -220,7 +220,9 @@ nav {
   transition: 0.3s ease-in-out;
 }
 /**************shop*************/
-
+#banner {
+  position: relative;
+}
 .box {
   width: 28%;
   transition: ease-in-out;
@@ -321,9 +323,7 @@ header h1 {
 }
 
 /******************banner style end***********************/
-#banner {
-  position: relative;
-}
+
 .overlay {
   width: 100%;
   height: 100%;
@@ -332,7 +332,7 @@ header h1 {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.89);
+  background-color: rgba(0, 0, 0, 0.7);
   transition: 2s ease-in-out;
 }
 
@@ -394,13 +394,5 @@ header h1 {
 }
 .show {
   display: block;
-  transition: 1s ease-in-out;
-}
-.heightSm {
-  height: 0;
-  transition: 1s ease-in-out;
-}
-.heightBig {
-  height: 100%;
   transition: 1s ease-in-out;
 }
